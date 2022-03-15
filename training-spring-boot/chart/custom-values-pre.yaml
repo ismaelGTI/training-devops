@@ -1,0 +1,35 @@
+name: traning-devops
+profile: pre
+replicaCount: 1
+image:
+  repository: container-registry/global/training-devops
+  tag: latest
+  pullPolicy: Always
+service:
+  name: training-backend
+  type: ClusterIP
+  livenessPath: /admin/actuator/health
+  externalPort: 80
+  readinessPath: /admin/actuator/health
+  internalPort: 8080
+ingress:
+  enabled: true
+  path: /
+  hosts:
+    - URL_API_PRE
+  annotations: 
+    kubernetes.io/ingress.class: azure/application-gateway
+    cert-manager.io/cluster-issuer: letsencrypt
+    appgw.ingress.kubernetes.io/request-timeout: "60"
+  tls:
+    - secretName:  training-devops-api-tls
+      hosts:
+        -  URL_API_PRE
+resources:
+  limits:
+    memory: 512Mi
+  requests:
+    memory: 512Mi
+java:
+  entrypointClass: org.springframework.boot.loader.JarLauncher
+  xmx: 512m

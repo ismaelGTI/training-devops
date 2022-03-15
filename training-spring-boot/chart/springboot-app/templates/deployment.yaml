@@ -1,0 +1,92 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ template "springboot-app.fullname" . }}
+  labels:
+    app: {{ template "springboot-app.name" . }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector: 
+    matchLabels:
+      app: {{ template "springboot-app.name" . }}   
+  template:
+    metadata:
+      labels:
+        app: {{ template "springboot-app.name" . }}
+        release: {{ .Release.Name }}
+      annotations:
+        {{- range $key, $value := .Values.annotations }}
+          {{ $key }}: {{ $value | quote }}
+        {{- end }}
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1100
+        runAsGroup: 1100   
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: {{ .Values.profile }}
+            - name: SPRING_CONFIG_ADDITIONAL_LOCATION
+              value: file:/etc/config/
+            {{- range $secret := .Values.secrets }}
+            - name: {{ $secret.name }}
+              valueFrom:
+                secretKeyRef:
+                  name: {{ $secret.secretName }}
+                  key: {{ $secret.secretKey }}
+            {{- end }}
+          command: ["/bin/sh"]
+          args: [ "-c", "java -Xmx{{ .Values.java.xmx }} -Djava.security.egd=file:/dev/./urandom {{ .Values.java.entrypointClass }}" ]
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.internalPort }}
+              protocol: TCP            
+          securityContext:
+            allowPrivilegeEscalation: false
+            privileged: false
+            capabilities:
+              drop: [ "ALL" ]
+          volumeMounts:
+            - name: application-config
+              mountPath: /etc/config/application.yml
+              subPath: application.yml
+              readOnly: true
+            - name: {{ template "springboot-app.name" . }}-config
+              mountPath: /etc/config/{{ template "springboot-app.name" . }}.yml
+              subPath: {{ template "springboot-app.name" . }}.yml
+              readOnly: true
+          livenessProbe:
+            httpGet:
+              path: {{ .Values.service.livenessPath }}
+              port: {{ .Values.service.internalPort }}
+            timeoutSeconds: 15
+            initialDelaySeconds: 15
+          readinessProbe:
+            httpGet:
+              path: {{ .Values.service.readinessPath }}
+              port: {{ .Values.service.internalPort }}
+            timeoutSeconds: 3
+            initialDelaySeconds: 15
+          resources:
+{{ toYaml .Values.resources | indent 12 }}
+      imagePullSecrets:
+        - name: acr-access
+        # - name: {{ template "springboot-app.name" . }}.{{ .Values.image.secret }}
+    {{- if .Values.nodeSelector }}
+      nodeSelector:
+{{ toYaml .Values.nodeSelector | indent 8 }}
+    {{- end }}
+      volumes:
+        - name: application-config
+          configMap:
+            name: application
+        - name: {{ template "springboot-app.name" . }}-config
+          configMap:
+            name: {{ template "springboot-app.name" . }}

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: application
+data:
+  application.yml: |-
+  {{ .Files.Get "configs/application.yml" | nindent 4 }}

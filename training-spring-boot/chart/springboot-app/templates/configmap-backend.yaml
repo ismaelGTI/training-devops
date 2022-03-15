@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: devops-admin-backend
+data:
+  devops-admin-backend.yml: |-
+  {{ .Files.Get "configs/devops-admin-backend.yml" | nindent 4 }}

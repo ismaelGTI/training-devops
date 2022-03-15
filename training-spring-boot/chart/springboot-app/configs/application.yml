@@ -1,0 +1,61 @@
+server:
+  http2.enabled: true
+  use-forward-headers: true
+  error.include-stacktrace: always
+  compression:
+    enabled: true
+    mime-types: application/hal+json,application/json,application/xml,text/html,text/xml,text/plain,application/javascript,text/css
+
+management:
+  metrics.enabled.jvm: true
+  endpoint:
+    health.show-details: "ALWAYS"
+  endpoints:
+    web.exposure.include: '*'
+  health:
+    mail.enabled: false
+    elasticsearch.enabled: false
+
+
+logging:
+  level:
+    org.springframework: INFO
+    
+#disable config server validation on healthcheck
+health.config.enabled: false
+
+security:
+  sessions: STATELESS
+  oauth2:
+    enabled: true
+    # If you want to securize swagger with oauth2, this is needed.
+    authserver: https://login.microsoftonline.com/TENANT_ID/oauth2/v2.0/authorize
+    resource:
+      jwt:
+        #public keys used to validate tokens
+        key-set-uri: https://login.microsoftonline.com/TENANT_ID/discovery/v2.0/keys
+
+---
+spring:
+  profiles: dev
+
+---
+spring:
+  profiles: pre
+
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR
+    com.example.demo: DEBUG
+
+---
+spring:
+  profiles: pro
+
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR
+    com.example.demo: INFO
+
