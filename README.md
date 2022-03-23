@@ -14,18 +14,21 @@
   - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-3) 
 * Ejercicio 4: Publicar imágenes en Container Registry
   - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-4)
-  - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-4) 
-* Ejercicio 5: Desplegar en AKS
-  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-5)
-  - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-5) 
-* Ejercicio 6: Crear un Helm Chart
+  - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-4)
+* Ejercicio 5: Desplegar clúster Kubernetes
+  - [Descripción](https://github.com/DavidSanchezAlvarez/training-devops/edit/main/README.md#ejercicio-5)
+  - [Ejecución](https://github.com/DavidSanchezAlvarez/training-devops/edit/main/README.md#pasos-para-la-realizaci%C3%B3n-del-ejercicio-5)  
+* Ejercicio 6: Desplegar en AKS
   - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-6)
-  - [Ejecución]() 
-* Ejercicio 7: Crear pipeline
+  - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-6) 
+* Ejercicio 7: Crear un Helm Chart
   - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-7)
   - [Ejecución]() 
-* Ejercicio 8: Usar Librería Global
+* Ejercicio 8: Crear pipeline
   - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-8)
+  - [Ejecución]() 
+* Ejercicio 9: Usar Librería Global
+  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-9)
   - [Ejecución]() 
 
 ### Requisitos ###
@@ -63,8 +66,11 @@ container-registry/training/nombre-aplicacion:version
 docker tag o podman tag
 docker push o podman push
 
-
 ### Ejercicio 5 ###
+
+Vamos a crear e interactuar con nuestro primer clúster de Kubernetes usando [Play with Kubernetes](https://labs.play-with-k8s.com/).
+
+### Ejercicio 6 ###
 
 Desplegar en AKS
 
@@ -74,17 +80,17 @@ Crear yaml para el service
 Crear yaml para el ingress
 
 
-### Ejercicio 6 ###
+### Ejercicio 7 ###
 
 Crear un Helm Chart para cada aplicación.
 
 Desplegar en AKS usando el Helm Chart.
 
-### Ejercicio 7 ###
+### Ejercicio 8 ###
 
 Crear una pipeline con las stages: Build, Docker Build, Publish Container Registry, Deploy AKS
 
-### Ejercicio 8 ###
+### Ejercicio 9 ###
 
 Usar la librería global en la pipeline.
 
@@ -231,8 +237,13 @@ Usar la librería global en la pipeline.
 
   docker run -tdi -p 8080:8080 container-registry/training/training-spring-boot:0.0.1-SNAPSHOT
   ```
-
+  
 ### Pasos para la realización del Ejercicio 5
+
+Accede al [Kubernetes Workshop](https://training.play-with-kubernetes.com/kubernetes-workshop/) y sigue las instrucciones paso a paso.
+
+
+### Pasos para la realización del Ejercicio 6
 
 * Obtener credenciales de cluster de pre
   ```properties
