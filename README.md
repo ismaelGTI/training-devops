@@ -1,17 +1,32 @@
 # TRAINING DEVOPS #
 
-
 ### ¿Qué contiene este repositorio? ###
 
 * Requisitos
 * Ejercicio 1: Crear aplicación Spring Boot
-* Ejercicio 2: Crear aplicación Angular 
+  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-1)
+  - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-1)
+* Ejercicio 2: Crear aplicación Angular
+  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-2)
+  - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-2) 
 * Ejercicio 3: Dockerizar aplicaciones
+  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-3)
+  - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-3) 
 * Ejercicio 4: Publicar imágenes en Container Registry
+  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-4)
+  - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-4) 
 * Ejercicio 5: Desplegar en AKS
+  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-5)
+  - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-5) 
 * Ejercicio 6: Crear un Helm Chart
+  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-6)
+  - [Ejecución]() 
 * Ejercicio 7: Crear pipeline
+  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-7)
+  - [Ejecución]() 
 * Ejercicio 8: Usar Librería Global
+  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-8)
+  - [Ejecución]() 
 
 ### Requisitos ###
 
@@ -116,7 +131,11 @@ Usar la librería global en la pipeline.
   
 #### **Dockerizar la aplicación Angular**
 
-* Instalar **[Docker](https://docs.docker.com/get-docker/)**.
+* Instalar **[Docker](https://docs.docker.com/get-docker/)** o **[Podman](https://podman.io/getting-started/installation)**.
+* Los comandos de Docker y Podman son intercambiables, simplemente escribe podman en lugar de docker para ejecutar el mismo comando. También puedes crear un alias.
+  ```
+  alias docker=podman
+  ```
 * Crear el Dockerfile correspondiente a la aplicación.
   ```dockerfile
   #Node v16
