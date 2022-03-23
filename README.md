@@ -16,8 +16,8 @@
   - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-4)
   - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-4)
 * Ejercicio 5: Desplegar clúster Kubernetes
-  - [Descripción](https://github.com/DavidSanchezAlvarez/training-devops/edit/main/README.md#ejercicio-5)
-  - [Ejecución](https://github.com/DavidSanchezAlvarez/training-devops/edit/main/README.md#pasos-para-la-realizaci%C3%B3n-del-ejercicio-5)  
+  - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-5)
+  - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-5)  
 * Ejercicio 6: Desplegar en AKS
   - [Descripción](https://github.com/SirNeo/training-devops#ejercicio-6)
   - [Ejecución](https://github.com/SirNeo/training-devops#pasos-para-la-realizaci%C3%B3n-del-ejercicio-6) 
