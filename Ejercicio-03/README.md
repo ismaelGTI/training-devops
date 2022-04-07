@@ -34,7 +34,7 @@ Dockerizar la aplicación creada en el ejercicio 1 y 2 y publicarlas en el Conta
   ```
   Ejemplo: al ejecutar ```docker run -d -it -p 800:80 training-angular``` abriendo en el navegador ```localhost:800``` veríamos:  
 
-   ![App dockerizada en ejecución](images/3dockerized-ag-app.PNG)
+   ![App dockerizada en ejecución](resources/3dockerized-ag-app.PNG)
    
 #### **Dockerizar la aplicación Spring Boot**
 
