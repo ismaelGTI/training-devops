@@ -42,5 +42,9 @@ Finalmente, ejecutarlo con `npm run start`, en este caso se ha añadido `npm run
 
 ![Captura_2](resources/2.PNG)
 
+Si nos dirigimos al navegador con el localhost:puerto que nos ha devuelto el powershell, nos aparecerá el proyecto:
+
+![Captura_final](resources/imagen.png)
+
 
 [< Ejercicio-01 - Crear aplicación Spring Boot](../Ejercicio-01/) | [ Ejercicio-03 - Dockerizar aplicaciones >](../Ejercicio-03/)
