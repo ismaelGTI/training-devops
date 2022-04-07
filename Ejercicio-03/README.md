@@ -35,7 +35,7 @@ Finalmente, ejecutarlo con `npm run start`, en este caso se ha añadido `npm run
 <br/>
 
 
-[< Lab 01 - Introducción a Docker](../Ejercicio-02/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../Ejercicio-03)
+[< Ejercicio-02 - Crear aplicación Angular](../Ejercicio-02/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../Ejercicio-03)
 <p align="center">
     <img src="../resources/header.png">
 </p>
