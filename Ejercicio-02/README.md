@@ -1,28 +1,15 @@
-# Ejercicio-01 - EL COMIENZO
+# Ejercicio-02 - Crear aplicación Angular
 
-# Esto es un h1
+Crear un proyecto node con Angular que solo contenga una página html con un Hello World. Incluir alguna imagen.
 
-## Esto es un h2
+## Pasos para la realización del Ejercicio-02
 
-## Esto es un h3
-
-```sh
-#Esto es un comentario dentro de un comando
-Esto sirve para escribir un comando con opcion de copia
-```
-
-`Esto sirve para escribir un comando sin opcion a copia`
-
--   Esto es un puntito de una lista
-
-<br/>
-  <p align="center">
-    <img src="">
-  </p>
-<br/>
+* Crear un nuevo proyecto Angular con 
+    ```ng new nombre-del-proyecto```
+* Cambiar el HTML y crear un componente para mostrar.
+* Ejecutarlo con ```npm run start```, en este caso se ha añadido ```npm run start-dev``` que abre el
+  navegador automáticamente y refresca si hay cambios.
 
 
-[< Lab 01 - Introducción a Docker](../lab-01/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../lab-03)
-<p align="center">
-    <img src="../resources/header.png">
-</p>
+
+[< Ejercicio-01 - Crear aplicación Spring Boot](../Ejercicio-01/) | [ Ejercicio-03 - Dockerizar aplicaciones >](../Ejercicio-03/)
