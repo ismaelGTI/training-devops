@@ -1,4 +1,4 @@
-# Ejercicio-01 - Creación de proyecto java usando Spring Initializr
+# Ejercicio-01 - Crear aplicación Spring Boot
 
 ## Enunciado
 Crear un proyecto java con Spring Boot usando **[Spring initializer](https://start.spring.io/)**.
