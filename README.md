@@ -1,7 +1,5 @@
 # TRAINING DEVOPS #
 
-Esto es una prueba.
-
 ### ¿Qué contiene este repositorio? ###
 
 * Requisitos
