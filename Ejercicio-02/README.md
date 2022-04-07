@@ -2,6 +2,12 @@
 
 Crear un proyecto node con Angular que solo contenga una página html con un Hello World. Incluir alguna imagen.
 
+* Crear un nuevo proyecto Angular con 
+    ```ng new nombre-del-proyecto```
+* Cambiar el HTML y crear un componente para mostrar.
+* Ejecutarlo con ```npm run start```, en este caso se ha añadido ```npm run start-dev``` que abre el
+  navegador automáticamente y refresca si hay cambios.
+
 ## Pasos para la realización del Ejercicio-02
 Primero es necesario instalar Angular en nuesto equipo:
 
@@ -23,6 +29,7 @@ Cambiar el HTML y crear un componente para mostrar.
 ng generate component image
 ```
 Dentro de la carpeta app, se creará una nueva carpeta con el nombre que le hemos dado anteriormente, dentro de ahí, se generará un archivo html que es donde podremos crear lo que queramos.
+
 ![Componente](resources/component-image.png)
 
 Para que el componente se muestre en el html principal, nos dirigimos al index.html y añadimos la linea <app-name></app-name> donde ¨name¨ será el nombre que le hemos asignado a nuestra componente.
