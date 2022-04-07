@@ -10,7 +10,7 @@ Esta aplicación deberá tener como librerías actuator y contará con un único
 ## Pasos para la realización del Ejercicio-01
 * Generar el proyecto en **[Spring initializer](https://start.spring.io/)**.
 * Extraer el proyecto y ejecutar 
-    ```mvn clean install``` en la raiz del proyecto.
+    ```mvn clean install``` en la raiz del proyecto. (Es necesario la previa instalación de maven para realizar este paso)
 * Abrir el proyecto con un IDE de Java (Eclipse, IntelliJ...).
 * Crear una clase con el código del endpoint.
   ```java
