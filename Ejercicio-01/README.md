@@ -1,4 +1,4 @@
-# Ejercicio-01 - EL COMIENZO
+# Ejercicio-01 - Crear aplicación Spring Boot
 
 # Esto es un h1
 
