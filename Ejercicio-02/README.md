@@ -28,11 +28,11 @@ Cambiar el HTML y crear un componente para mostrar.
 #Generamos un nuevo componente con el nombre que queramos 
 ng generate component image
 ```
-Dentro de la carpeta app, se creará una nueva carpeta con el nombre que le hemos dado anteriormente, dentro de ahí, se generará un archivo html que es donde podremos crear lo que queramos.
+Dentro de la carpeta app, se creará una nueva carpeta con el nombre que le hemos dado anteriormente, dentro de ahí, se generará un archivo html (app/nombre-componente/nombre-component.html) que es donde podremos crear lo que queramos.
 
 ![Componente](resources/component-image.png)
 
-Para que el componente se muestre en el html principal, nos dirigimos al index.html y añadimos la linea <app-name></app-name> donde ¨name¨ será el nombre que le hemos asignado a nuestra componente.
+Para que el componente se muestre, nos dirigimos a app/app.component.html y añadimos la linea <app-name></app-name> donde ¨name¨ será el nombre que le hemos asignado a nuestra componente.
 
 ![añadir componente](resources/add-component.png)
 
