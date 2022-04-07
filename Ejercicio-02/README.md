@@ -14,7 +14,7 @@ Luegos, creamos un nuevo proyecto Angular con:
 ng new nombre-del-proyecto
 ```
 
-![Captura_1](resources/1.png)
+![Captura_1](resources/1.PNG)
 
 Cambiar el HTML y crear un componente para mostrar.
 
@@ -29,7 +29,7 @@ Con esto último hemos hecho posible que el componente creado se muestre en la p
 
 Finalmente, ejecutarlo con `npm run start`, en este caso se ha añadido `npm run start -dev` que abre el navegador automáticamente y refresca si hay cambios.
 
-![Captura_2](resources/2.png)
+![Captura_2](resources/2.PNG)
 
 
 [< Ejercicio-01 - Crear aplicación Spring Boot](../Ejercicio-01/) | [ Ejercicio-03 - Dockerizar aplicaciones >](../Ejercicio-03/)
