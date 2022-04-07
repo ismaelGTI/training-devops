@@ -23,7 +23,11 @@ Cambiar el HTML y crear un componente para mostrar.
 ng generate component image
 ```
 Dentro de la carpeta app, se creará una nueva carpeta con el nombre que le hemos dado anteriormente, dentro de ahí, se generará un archivo html que es donde podremos crear lo que queramos.
+![Componente](resources/component-image.png)
+
 Para que el componente se muestre en el html principal, nos dirigimos al index.html y añadimos la linea <app-name></app-name> donde ¨name¨ será el nombre que le hemos asignado a nuestra componente.
+
+![añadir componente](resources/add-component.png)
 
 Con esto último hemos hecho posible que el componente creado se muestre en la página principal de nuestro proyecto Angular.
 
