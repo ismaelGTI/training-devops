@@ -38,4 +38,4 @@ Esta aplicación deberá tener como librerías actuator y contará con un único
     ![Ejecución con parametro](resources/1endpoint-with-param.PNG)  
 
 
-[< Training-devops](../training-devops/) | [ Ejercicio-02 - Crear una aplicación Angular >](../Ejercicio-02/)
+[< Training-devops ¡BIENDVENID@!](../README.md) | [ Ejercicio-02 - Crear una aplicación Angular >](../Ejercicio-02/)
