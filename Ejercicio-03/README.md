@@ -1,19 +1,30 @@
-# Ejercicio-01 - EL COMIENZO
+# Ejercicio-02 - Crear aplicación Angular
 
-# Esto es un h1
+Crear un proyecto node con Angular que solo contenga una página html con un Hello World. Incluir alguna imagen.
 
-## Esto es un h2
-
-## Esto es un h3
+## Pasos para la realización del Ejercicio-02
+Primero es necesario instalar Angular en nuesto equipo:
 
 ```sh
-#Esto es un comentario dentro de un comando
-Esto sirve para escribir un comando con opcion de copia
+npm install -g @angular/cli
+```
+Luegos, creamos un nuevo proyecto Angular con:
+
+```sh
+ng new nombre-del-proyecto
 ```
 
-`Esto sirve para escribir un comando sin opcion a copia`
+Cambiar el HTML y crear un componente para mostrar.
 
--   Esto es un puntito de una lista
+```sh
+#Generamos un nuevo componente 
+ng generate component image
+```
+Dentro de la carpeta app, se creará una nueva carpeta con el nombre que le hemos dado anteriormente, dentro de ahí, se generará un archivo html que es donde podremos crear lo que queramos.
+Con esto último hemos hecho posible que el componente creado se muestre en la página principal de nuesro proyecto Angular.
+
+Finalmente, ejecutarlo con `npm run start`, en este caso se ha añadido `npm run start -dev` que abre el navegador automáticamente y refresca si hay cambios.
+
 
 <br/>
   <p align="center">
