@@ -3,7 +3,7 @@
 ## Enunciado
 Crear un proyecto java con Spring Boot usando **[Spring initializer](https://start.spring.io/)**.
 
-![Spring initializer](images/spring-initializer.png)
+![Spring initializer](resources/spring-initializer.png)
 
 Esta aplicación deberá tener como librerías actuator y contará con un único endpoint que devolvera el texto "Hello World!". Si se le pasa por parámetro el nombre de una persona, el mensaje será "Hello Nombre!".
 
