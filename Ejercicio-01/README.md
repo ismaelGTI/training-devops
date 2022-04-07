@@ -33,9 +33,9 @@ Esta aplicación deberá tener como librerías actuator y contará con un único
 * Para comprobar el correcto funcionamiento de esta podemos acceder al endpoint creado anteriormente:
     
     http://localhost:8080/helloWorld  
-    ![Ejecución sin parametro](images/1endpoint-no-param.PNG)  
+    ![Ejecución sin parametro](resources/1endpoint-no-param.PNG)  
     http://localhost:8080/helloWorld?name=prueba  
-    ![Ejecución con parametro](images/1endpoint-with-param.PNG)  
+    ![Ejecución con parametro](resources/1endpoint-with-param.PNG)  
 
 
 [< Lab 01 - Introducción a Docker](../lab-01/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../lab-03)
