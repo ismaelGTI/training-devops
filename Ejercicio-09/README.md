@@ -22,7 +22,7 @@ Esto sirve para escribir un comando con opcion de copia
 <br/>
 
 
-[< Lab 01 - Introducción a Docker](../lab-01/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../lab-03)
+[< Ejercicio-08 - Introducción a Docker](../Ejercicio-08/) 
 <p align="center">
     <img src="../resources/header.png">
 </p>
