@@ -1,7 +1,5 @@
 # TRAINING DEVOPS !BIENVENIDO@! #
 
-Esto es una prueba.
-confirmo prueba
 ### ¿Qué contiene este repositorio? ###
 
 * Requisitos
