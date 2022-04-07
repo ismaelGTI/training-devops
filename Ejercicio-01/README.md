@@ -38,7 +38,4 @@ Esta aplicación deberá tener como librerías actuator y contará con un único
     ![Ejecución con parametro](resources/1endpoint-with-param.PNG)  
 
 
-[< Lab 01 - Introducción a Docker](../lab-01/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../lab-03)
-<p align="center">
-    <img src="../resources/header.png">
-</p>
+[< Training-devops](../) | [ Ejercicio-02 - Crear una aplicación Angular >](../Ejercicio-02/)
