@@ -21,7 +21,7 @@ Dockerizar la aplicación creada en el ejercicio 1 y 2 y publicarlas en el Conta
   RUN npm run build --prod
 
   FROM nginx:1.17.1-alpine
-  COPY --from=build-step /training-angular/dist/training-angular /usr/share/nginx/html
+  COPY --from=build-step /training-angular/dist/hello-world /usr/share/nginx/html
   ```
 * Crear el archivo .dockerignore
 * Crear la imagen Docker con: 
@@ -71,5 +71,42 @@ Dockerizar la aplicación creada en el ejercicio 1 y 2 y publicarlas en el Conta
   
 ## Pasos para la realización del Ejercicio-03
 
+* Crear el Dockerfile correspondiente a la aplicación.
+Para que funcione correctamente, deberemos cambiar el último comando "COPY" y en el path "/training-angular/dist/hello-world" deberemos modificar .../dist/hello-world por lo que nos salga en el atributo "outputPath" del archivo angular.json.
+  ```dockerfile
+  #Node v16
+  FROM node:16-alpine as build-step 
+  RUN mkdir -p /training-angular
+  WORKDIR /training-angular
+  COPY package.json /training-angular
+  RUN npm install
+  COPY . /training-angular
+  RUN npm run build --prod
+
+  FROM nginx:1.17.1-alpine
+  COPY --from=build-step /training-angular/dist/hello-world /usr/share/nginx/html
+  ```
+  
+ * Crear el archivo .dockerignore
+```.dockerignore
+.git
+.firebase
+.editorconfig
+/node_modules
+/e2e
+/docs
+.gitignore
+*.zip
+*.md
+```
+* Crear la imagen Docker con: 
+  ```properties
+  docker build -t training-angular . 
+  ```
+* Ejecutar el contenedor con:
+  ```properties
+  docker run -d -it -p LOCAL_PORT:CONTAINER_PORT training-angular
+  ```
+  Ejemplo: al ejecutar ```docker run -d -it -p 800:80 training-angular``` abriendo en el navegador ```localhost:800``` veríamos:  
 
 [< Ejercicio-02 - Crear aplicación Angular](../Ejercicio-02/) | [ Ejercicio-04 - Publicar imágenes en Container Registry >](../Ejercicio-04)
