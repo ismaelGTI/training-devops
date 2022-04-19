@@ -1,28 +1,39 @@
 # Ejercicio-01 - EL COMIENZO
 
-# Esto es un h1
+### Pasos para la realización del Ejercicio 4
 
-## Esto es un h2
+* Hacer login en una cuenta autorizada con el comando ```az login```
+* Hacer login en el Container Registry:
+  ```properties
+  az acr login --name container-registry
+  ```
+* Hacer tag y push a las imagenes
+  - De Angular:
+  ```properties
+  docker tag training-angular container-registry/training/training-angular:0.0.1-SNAPSHOT
 
-## Esto es un h3
+  docker push container-registry/training/training-angular:0.0.1-SNAPSHOT
+  ```
+  - De Spring Boot:
+  ```properties
+  docker tag training-spring-boot container-registry/training/training-spring-boot:0.0.1-SNAPSHOT
 
-```sh
-#Esto es un comentario dentro de un comando
-Esto sirve para escribir un comando con opcion de copia
-```
+  docker push container-registry/training/training-spring-boot:0.0.1-SNAPSHOT
+  ```
+* Eliminar la imagen del entorno de Docker local (opcional):
+  ```properties
+  docker rmi container-registry/training/aplicacion:version
+  ```
+* Ejecutar la imagen desde el Container Registry:
+  ```properties
+  docker run -p LOCAL_PORT:CONTAINER_PORT container-registry/training/aplicacion:version
+  ```
+  Para nuestras aplicaciones: 
+  ```properties
+  docker run -tdi -p 80:80 container-registry/training/training-angular:0.0.1-SNAPSHOT
 
-`Esto sirve para escribir un comando sin opcion a copia`
+  docker run -tdi -p 8080:8080 container-registry/training/training-spring-boot:0.0.1-SNAPSHOT
+  ```
 
--   Esto es un puntito de una lista
+[< Lab 03 - Introducción a Docker](../lab-01/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../lab-03)
 
-<br/>
-  <p align="center">
-    <img src="">
-  </p>
-<br/>
-
-
-[< Lab 01 - Introducción a Docker](../lab-01/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../lab-03)
-<p align="center">
-    <img src="../resources/header.png">
-</p>
