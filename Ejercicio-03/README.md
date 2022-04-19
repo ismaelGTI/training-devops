@@ -71,6 +71,8 @@ Dockerizar la aplicación creada en el ejercicio 1 y 2 y publicarlas en el Conta
   
 ## Pasos para la realización del Ejercicio-03
 
+#### **Dockerizar la aplicación Angular**
+
 * Crear el Dockerfile correspondiente a la aplicación.
 
 Para que funcione correctamente, deberemos cambiar el último comando "COPY" y en el path "/training-angular/dist/hello-world" deberemos modificar .../dist/hello-world por lo que nos salga en el atributo "outputPath" del archivo angular.json.
@@ -112,4 +114,8 @@ Para que funcione correctamente, deberemos cambiar el último comando "COPY" y e
   
   ![App dockerizada en ejecución](resources/3dockerized-ag-app.PNG)
   
+
+#### **Dockerizar la aplicación Spring Boot**
+
+
   [< Ejercicio-02 - Crear aplicación Angular](../Ejercicio-02/) | [ Ejercicio-04 - Publicar imágenes en Container Registry >](../Ejercicio-04)
