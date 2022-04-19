@@ -117,5 +117,41 @@ Para que funcione correctamente, deberemos cambiar el último comando "COPY" y e
 
 #### **Dockerizar la aplicación Spring Boot**
 
+* Comprobar que el bundle es correcto con Maven:
 
+Para que funcione la segunda instrucción debemos cambiar el nombre del .jar al equivalente dentro de la carpeta /target/ de nuestro proyecto.
+  ```properties
+  mvn clean package
+  java -jar target/training-spring-boot-0.0.1-SNAPSHOT.jar
+    ```
+  Si ejecuta correctamente en ```localhost:8080``` se puede empezar con la Dockerización
+
+* Creación del Dockerfile:  
+  Añadir un nombre final para el .jar al pom.xml:
+  ```xml
+  <build>
+    ...
+    <finalName>training-spring-boot</finalName>
+    ...
+  </build>
+  ```
+  Crear el Dockerfile:
+  ```dockerfile
+  FROM openjdk:11
+  ADD target/training-spring-boot.jar /usr/share/training-spring-boot.jar
+  CMD ["java", "-jar", "usr/share/training-spring-boot.jar"]
+  ```
+* Hacer build del Dockerfile:
+  ```properties
+  docker build -t training-spring-boot .
+  ```
+* Ejecutar el contenedor:
+  ```properties
+   docker run -tdi -p LOCAL_PORT:CONTAINER_PORT training-spring-boot
+  ```
+  
+  En este ejemplo usamos los puertos 8080:8080, por lo que al buscar en el navegador "localhost:8080/helloWorld" nos aparecerá lo siguiente:
+  
+  ![App dockerizada en ejecución](resources/3dockerized-ag-app.PNG)
+  
   [< Ejercicio-02 - Crear aplicación Angular](../Ejercicio-02/) | [ Ejercicio-04 - Publicar imágenes en Container Registry >](../Ejercicio-04)
