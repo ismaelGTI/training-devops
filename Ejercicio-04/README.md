@@ -1,4 +1,4 @@
-# Ejercicio-01 - EL COMIENZO
+# Ejercicio-04 - Publicar imágenes en Container Registry
 
 ### Pasos para la realización del Ejercicio 4
 
