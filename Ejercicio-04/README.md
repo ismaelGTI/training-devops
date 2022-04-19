@@ -41,6 +41,10 @@ docker tag o podman tag docker push o podman push
 
 
 [NOTA] Si queremos hacer un push de la imagen que tenemos en local para subirla a nuestro Dockerhub y después hacer correr nuestro contenedor desde ahí debemos ejecutar las instrucciones que aparecen en la siguiente captura. 
+Siendo en este caso:
+- lorenreinad: el nombre de usuario de Dockerhub
+- my-repo: el nombre del repositorio público creado en tu cuenta de Dockerhub
+- training-angular: el tag que le queremos poner a la imagen
 
 ![App dockerizada en Dockerhub](resources/1.PNG)
 
