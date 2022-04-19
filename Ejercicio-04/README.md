@@ -1,5 +1,9 @@
 # Ejercicio-04 - Publicar imágenes en Container Registry
 
+Publicar imágenes en el Container Registry: container-registry/training/nombre-aplicacion:version
+
+docker tag o podman tag docker push o podman push
+
 ### Pasos para la realización del Ejercicio 4
 
 * Hacer login en una cuenta autorizada con el comando ```az login```
@@ -35,5 +39,5 @@
   docker run -tdi -p 8080:8080 container-registry/training/training-spring-boot:0.0.1-SNAPSHOT
   ```
 
-[< Lab 03 - Introducción a Docker](../lab-01/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../lab-03)
+[< Ejercicio-03 - Dockerizar aplicaciones](../Ejercicio-03/) | [ Ejercicio-05 - Desplegar clúster Kubernetes >](../Ejercicio-05)
 
