@@ -152,6 +152,6 @@ Para que funcione la segunda instrucción debemos cambiar el nombre del .jar al 
   
   En este ejemplo usamos los puertos 8080:8080, por lo que al buscar en el navegador "localhost:8080/helloWorld" nos aparecerá lo siguiente:
   
-  ![App dockerizada en ejecución](resources/3dockerized-ag-app.PNG)
+  ![App dockerizada en ejecución](resources/1endpoint-no-param.PNG)
   
   [< Ejercicio-02 - Crear aplicación Angular](../Ejercicio-02/) | [ Ejercicio-04 - Publicar imágenes en Container Registry >](../Ejercicio-04)
