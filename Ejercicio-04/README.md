@@ -39,5 +39,12 @@ docker tag o podman tag docker push o podman push
   docker run -tdi -p 8080:8080 container-registry/training/training-spring-boot:0.0.1-SNAPSHOT
   ```
 
+
+Si queremos hacer un push de la imagen que tenemos en local para subirla a nuestro Dockerhub y después hacer correr nuestro contenedor desde ahí debemos ejecutar las instrucciones que aparecen en la siguiente captura. 
+
+![App dockerizada en Dockerhub](resources/1.PNG)
+
+
+
 [< Ejercicio-03 - Dockerizar aplicaciones](../Ejercicio-03/) | [ Ejercicio-05 - Desplegar clúster Kubernetes >](../Ejercicio-05)
 
