@@ -48,12 +48,14 @@ Siendo en este caso:
 
 ![App dockerizada en Dockerhub](resources/1.PNG)
 
-[NOTA] Otra alternativa es realizar a través del repositorio local con registry. https://docs.docker.com/registry/
+[NOTA] Otra alternativa es realizarlo a través del repositorio local con registry. https://docs.docker.com/registry/
 
 Se realiza el tag y push de esta manera:
+
 <img width="887" alt="image" src="https://user-images.githubusercontent.com/57345200/163991483-747c3ab7-9959-4ff7-8609-9a59824a9f8b.png">
  
 Y una vez todo esté en el repositorio local, lo arrancamos de esta forma:
+
 <img width="881" alt="image" src="https://user-images.githubusercontent.com/57345200/163991676-4b6cbd78-4fe2-41f6-8a0a-8ac0a2c102b2.png">
 
 
