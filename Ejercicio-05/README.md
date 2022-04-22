@@ -14,4 +14,4 @@ https://www.youtube.com/watch?v=DCoBcpOA7W4
 
 
 
-[< Ejercicio-03 - Dockerizar aplicaciones](../Ejercicio-03/) | [ Ejercicio-06 -Desplegar en AKS >](../Ejercicio-06)
+[< Ejercicio-04 - Publicar imágenes en Container Registry](../Ejercicio-04/) | [ Ejercicio-06 -Desplegar en AKS >](../Ejercicio-06)
