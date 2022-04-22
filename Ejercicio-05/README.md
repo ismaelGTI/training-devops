@@ -7,6 +7,7 @@ Vamos a crear e interactuar con nuestro primer clúster de Kubernetes usando Pla
 Accede al https://training.play-with-kubernetes.com/kubernetes-workshop/ y sigue las instrucciones paso a paso.
 
 Para seguir las instrucciones, fue necesario la instalación de minikube en local, ya que la página Play with Kubernetes da problemas.
+Saltarse los pasos iniciales del tutorial y comenzar a probar comandos desde la sección "First contact with kubectl"
 
 Una vez instalado minikube en local, se visualizó el siguiente vídeo para introducirse en el mundo de Kubernetes y entender los conceptos:
 
@@ -14,4 +15,4 @@ https://www.youtube.com/watch?v=DCoBcpOA7W4
 
 
 
-[< Ejercicio-04 - Publicar imágenes en Container Registry](../Ejercicio-04/) | [ Ejercicio-06 -Desplegar en AKS >](../Ejercicio-06)
+[< Ejercicio-04 - Publicar imágenes en Container Registry](../Ejercicio-04/) | [ Ejercicio-06 - Desplegar en AKS >](../Ejercicio-06)
