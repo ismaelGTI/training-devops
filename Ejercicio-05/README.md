@@ -1,25 +1,17 @@
-# Ejercicio-01 - EL COMIENZO
+# Ejercicio-05 - Desplegar cluster de Kubernetes
 
-# Esto es un h1
+Vamos a crear e interactuar con nuestro primer clúster de Kubernetes usando Play with Kubernetes.
 
-## Esto es un h2
+# Pasos para la realización del Ejercicio 5
 
-## Esto es un h3
+Accede al https://training.play-with-kubernetes.com/kubernetes-workshop/ y sigue las instrucciones paso a paso.
 
-```sh
-#Esto es un comentario dentro de un comando
-Esto sirve para escribir un comando con opcion de copia
-```
+Para seguir las instrucciones, fue necesario la instalación de minikube en local, ya que la página Play with Kubernetes da problemas.
 
-`Esto sirve para escribir un comando sin opcion a copia`
+Una vez instalado minikube en local, se visualizó el siguiente vídeo para introducirse en el mundo de Kubernetes y entender los conceptos:
 
--   Esto es un puntito de una lista
+https://www.youtube.com/watch?v=DCoBcpOA7W4
 
-<br/>
-  <p align="center">
-    <img src="">
-  </p>
-<br/>
 
 
 [< Lab 01 - Introducción a Docker](../lab-01/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../lab-03)
