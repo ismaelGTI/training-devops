@@ -11,7 +11,18 @@ Crear yaml para el deployment Crear yaml para el configmap Crear yaml para el se
   az login
   az aks get-credentials --resource-group=rg-training --name=aks-devops-training-pre --subscription=azure-subscription --admin
   ```
+  
+  Si esto no funciona y no puedes obtener los credenciales puedes trabajar con el cluster de minikube de los ejercicios anteriores.
+  
 * Archivos YAML de Training Angular:
+
+Antes de ejecutar cualquier instrucción necesitamos crear el namespace que se va a utilizar:
+
+```
+kubectl create namespace training
+kubectl apply -f Deployment.yaml
+```
+
   * Deployment:
     ```yaml
     apiVersion: apps/v1 
@@ -37,6 +48,11 @@ Crear yaml para el deployment Crear yaml para el configmap Crear yaml para el se
           imagePullSecrets: 
             - name: acr-access 
     ```
+    
+```
+kubectl apply -f Service.yaml
+```
+
   * Service:
     ```yaml
     apiVersion: v1
@@ -53,6 +69,14 @@ Crear yaml para el deployment Crear yaml para el configmap Crear yaml para el se
       selector:
         deployment-label-key: training-angular
     ```
+
+Antes de correr el comando apply con el Ingress.yaml debemos asegurarnos de que tenemos instalado el NGINX Ingress Controller.
+
+```
+minikube addons enable ingress
+kubectl apply -f Ingress.yaml
+```
+
   * Ingress:
     ```yaml
     apiVersion: networking.k8s.io/v1
@@ -77,7 +101,11 @@ Crear yaml para el deployment Crear yaml para el configmap Crear yaml para el se
                 port:
                   number: 80
     ```
+    
 * Archivos YAML de Training Spring Boot:
+
+Los comandos que se usarán en esta aplicación son los mismos si no muy parecidos a los de la aplicación con angular.
+
   * Deployment:
     ```yaml
     apiVersion: apps/v1 
