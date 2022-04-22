@@ -42,7 +42,7 @@ kubectl apply -f Deployment.yaml
         spec: 
           containers: 
           - name: training-angular 
-            image: NombreRepositorio/repositorio:training-angular
+            image: Usuario-dockerhub/NombreRepositorio:training-angular
             ports: 
             - containerPort: 80
           imagePullSecrets: 
@@ -125,7 +125,7 @@ Los comandos que se usarán en esta aplicación son los mismos si no muy parecid
         spec: 
           containers: 
           - name: training-spring-boot 
-            image: NombreRepositorio/repositorio:training-spring-boot
+            image: Usuario-dockerhub/NombreRepositorio:training-spring-boot
             ports: 
             - containerPort: 80 
           imagePullSecrets: 
