@@ -14,4 +14,4 @@ https://www.youtube.com/watch?v=DCoBcpOA7W4
 
 
 
-[< Lab 01 - Introducción a Docker](../lab-01/) | [ Lab - 03 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../lab-03)
+[< Ejercicio-03 - Dockerizar aplicaciones](../Ejercicio-03/) | [ Ejercicio-06 -Desplegar en AKS >](../Ejercicio-06)
