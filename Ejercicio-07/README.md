@@ -30,7 +30,7 @@ Ya instalado los servicios, con el comando ```kubectl get pods -n training ``` (
 ![image](https://user-images.githubusercontent.com/57345200/165062585-616fb6a6-68b2-47f9-981e-9f5306d57489.png)
 
 
-Finlamnte, para poder acceder localmente al servicio creado, ejecutamos ```kubectl --namespace training port-forward $POD_NAME 8080:$CONTAINER_PORT ``` para acceder desde el navegador.
+Finalmente, ejecutamos ```kubectl --namespace training port-forward $POD_NAME 8080:$CONTAINER_PORT ``` para crear un tunel y poder acceder el servicio desplegado desde el navegador.
 
 
 [< Ejercicio-06 - Desplegar en AKS ](../Ejercicio-06/) | [ Ejercicio-08 Una pequeña práctica, un "Hola Mundo" por supuesto. >](../Ejercicio-03)
