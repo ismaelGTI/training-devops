@@ -1,4 +1,4 @@
-# TRAINING DEVOPS ¡BIENVENIDO@! #
+# TRAINING DEVOPS ¡BIENVENID@! #
 
 ### ¿Qué contiene este repositorio? ###
 
