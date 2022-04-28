@@ -1,28 +1,9 @@
-# Ejercicio-01 - EL COMIENZO
+# Ejercicio-09 - Usar librería global
 
-# Esto es un h1
+Usar la librería global en la pipeline.
 
-## Esto es un h2
+## Pasos para la realización del Ejercicio-09
 
-## Esto es un h3
+Ejercicio por realizar.
 
-```sh
-#Esto es un comentario dentro de un comando
-Esto sirve para escribir un comando con opcion de copia
-```
-
-`Esto sirve para escribir un comando sin opcion a copia`
-
--   Esto es un puntito de una lista
-
-<br/>
-  <p align="center">
-    <img src="">
-  </p>
-<br/>
-
-
-[< Ejercicio-08 - Introducción a Docker](../Ejercicio-08/) 
-<p align="center">
-    <img src="../resources/header.png">
-</p>
+[< Ejercicio-08 - Crear pipeline >](../Ejercicio-08/) 
