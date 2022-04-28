@@ -25,7 +25,7 @@ helm search repo jenkins
 helm install jenkins jenkins/jenkins
 ```
 
-5) Para comprobar que el servicio esta corriendo bien, lo comprobamos con la instrucción ``` kubectl get pods ``` que deberían de aparecer los procesos corriendo
+5) Para comprobar que el servicio esta corriendo bien, lo comprobamos con la instrucción ``` kubectl get pods ```y nos deberían de devolver una lista con los procesos corriendo.
 
 6) Seguir los pasos indicados por consola para obtener la contraseña de inicio de sesión en jenkins y hacer un tunel con port-forward para poder entrar a través del navegador con la dirección 127.0.0.1:8080
 
