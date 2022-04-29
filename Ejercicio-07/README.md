@@ -1,4 +1,4 @@
-# Ejercicio-07 - Desplegar en AKS
+# Ejercicio-07 - Crear un helm chart
 
 Crear un Helm Chart para cada aplicación.
 
