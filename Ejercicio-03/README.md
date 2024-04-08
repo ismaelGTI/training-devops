@@ -25,7 +25,7 @@ Para que funcione correctamente, deberemos cambiar el último comando "COPY" y e
   RUN npm run build --prod
 
   FROM nginx:1.17.1-alpine
-  COPY --from=build-step /training-angular/dist/hello-world /usr/share/nginx/html
+  COPY --from=build-step /training-angular/dist/hello-world/browser /usr/share/nginx/html
   ```
   
  * Crear el archivo .dockerignore
@@ -48,7 +48,7 @@ Para que funcione correctamente, deberemos cambiar el último comando "COPY" y e
   ```properties
   docker run -d -it -p LOCAL_PORT:CONTAINER_PORT training-angular
   ```
-  Ejemplo: al ejecutar ```docker run -d -it -p 800:80 training-angular``` abriendo en el navegador ```localhost:800``` veríamos:  
+  Ejemplo: al ejecutar ```docker run -d -p 8000:80 training-angular``` abriendo en el navegador ```localhost:8000``` veríamos:  
   
   ![App dockerizada en ejecución](resources/3dockerized-ag-app.PNG)
   
