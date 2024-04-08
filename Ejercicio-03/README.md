@@ -13,10 +13,9 @@ Dockerizar la aplicación creada en el ejercicio 1 y 2 y publicarlas en el Conta
   ```
 * Crear el Dockerfile correspondiente a la aplicación.
 
-Para que funcione correctamente, deberemos cambiar el último comando "COPY" y en el path "/training-angular/dist/hello-world" deberemos modificar .../dist/hello-world por lo que nos salga en el atributo "outputPath" del archivo angular.json.
+**Para que funcione correctamente**, deberemos cambiar el último comando "COPY" y en el path "/training-angular/dist/hello-world" deberemos modificar .../dist/hello-world por lo que nos salga en el atributo "outputPath" del archivo angular.json.
   ```dockerfile
-  #Node v16
-  FROM node:16-alpine as build-step 
+  FROM node:18 as build-step 
   RUN mkdir -p /training-angular
   WORKDIR /training-angular
   COPY package.json /training-angular
