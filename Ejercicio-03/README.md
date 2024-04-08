@@ -73,9 +73,9 @@ Para que funcione la segunda instrucción debemos cambiar el nombre del .jar al 
     ...
   </build>
   ```
-  Crear el Dockerfile:
+  Crear el Dockerfile (ajustar la versión de la imagen de OpenJDK a la que hayamos configurado al crear el proyecto de Spring Boot):
   ```dockerfile
-  FROM openjdk:11
+  FROM openjdk:17
   ADD target/training-spring-boot.jar /usr/share/training-spring-boot.jar
   CMD ["java", "-jar", "usr/share/training-spring-boot.jar"]
   ```
