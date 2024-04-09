@@ -24,7 +24,7 @@ Dockerizar la aplicación creada en el ejercicio 1 y 2 y publicarlas en el Conta
   RUN npm run build --prod
 
   FROM nginx:1.17.1-alpine
-  COPY --from=build-step /training-angular/dist/hello-world /usr/share/nginx/html
+  COPY --from=build-step /training-angular/dist/hello-world/browser /usr/share/nginx/html
   ```
   
  * Crear el archivo .dockerignore
@@ -47,7 +47,7 @@ Dockerizar la aplicación creada en el ejercicio 1 y 2 y publicarlas en el Conta
   ```properties
   docker run -d -it -p LOCAL_PORT:CONTAINER_PORT training-angular
   ```
-  Ejemplo: al ejecutar ```docker run -d -it -p 800:80 training-angular``` abriendo en el navegador ```localhost:800``` veríamos:  
+  Ejemplo: al ejecutar ```docker run -d -p 8000:80 training-angular``` abriendo en el navegador ```localhost:8000``` veríamos:  
   
   ![App dockerizada en ejecución](resources/3dockerized-ag-app.PNG)
   
