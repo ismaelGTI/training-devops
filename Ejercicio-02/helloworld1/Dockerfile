@@ -1,4 +1,4 @@
-FROM node:16-alpine as build-step
+FROM node:18-alpine as build-step
 RUN mkdir -p /training-angular
 WORKDIR /training-angular
 COPY package.json /training-angular
