@@ -25,4 +25,4 @@ RUN npm run build --prod
 FROM nginx:1.17.1-alpine
 
 # Copiar los archivos construidos en la etapa anterior
-COPY --from=build-step /app/dist/p02angular /usr/share/nginx/html
+COPY --from=build-step /app/dist/helloworld1 /usr/share/nginx/html
